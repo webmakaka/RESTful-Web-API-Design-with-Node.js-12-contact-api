@@ -9,6 +9,7 @@ https://www.packtpub.com/web-development/restful-web-api-design-with-node-js-12-
 https://github.com/PacktPublishing/RESTful-Web-API-Design-with-Node.js-12-contact-api
 
 
+
 <!--
 
 <br/>
@@ -52,6 +53,133 @@ https://github.com/PacktPublishing/RESTful-Web-API-Design-with-Node.js-12-contac
 ```
 
 -->
+
+## 2. Building a Typical Web API
+
+<br/>
+
+### 2.1 Specifying the API
+
+    $ npm run start:dev
+
+<br/>
+
+### 2.2 Implementing Routes
+
+    $ npm run start:dev
+
+    $ curl \
+    --request GET http://localhost:3000/contacts/ \
+    --header "Content-Type: application/json" \
+    --user "admin:supersecret2" \
+    | python -m json.tool
+
+<br/>
+
+**response:**
+
+```
+[
+    [
+        "324d28ab-f909-4ddb-ac97-e9226d6c8afb",
+        {
+            "company": "O'Reilly - McKenzie",
+            "firstName": "Freida",
+            "groups": [
+                "Dev",
+                "Node.js"
+            ],
+            "jobTitle": "Corporate Group Liaison",
+            "lastName": "Pacocha",
+            "otherContactNumbers": [
+                "1-050-404-1047",
+                "1-098-650-8906 x66529"
+            ],
+            "otherEmailAddresses": [
+                "Scarlett.Swift@gmail.com",
+                "Alden_Heidenreich62@gmail.com"
+            ],
+            "primaryContactNumber": "(546) 741-8865 x70321",
+            "primaryEmailAddress": "Delphine.Carroll20@gmail.com",
+            "socialMedia": [
+                {
+                    "link": "http://wyman.info",
+                    "name": "Linkedin"
+                },
+                {
+                    "link": "https://norval.biz",
+                    "name": "Twitter"
+                }
+            ]
+        }
+    ],
+
+***
+
+```
+
+<br/>
+
+### 2.3 Querying the API Using Mock Data
+
+GET, POST, PUT, DELETE - examples
+
+<br/>
+
+### 2.4 Content Negotiation
+
+    $ curl \
+    --request GET http://localhost:3000/contacts/ \
+    --header "Content-Type: application/json" \
+    --user "admin:supersecret2" \
+    | python -m json.tool
+
+<br/>
+
+    $ curl \
+    --request GET http://localhost:3000/contacts/ \
+    --header "Content-Type: text/html" \
+    --user "admin:supersecret2"
+
+<br/>
+
+    $ curl \
+    --request GET http://localhost:3000/contacts/ \
+    --header "Content-Type: text/plain" \
+    --user "admin:supersecret2"    
+
+<br/>
+
+### 2.5 API Versioning
+
+    $ curl \
+    --request GET http://localhost:3000/v2/ \
+    --header "Content-Type: application/json" \
+    --user "admin:supersecret" \
+    | python -m json.tool
+
+
+<br/>
+
+## 3. Using NoSQL Databases
+
+
+<br/>
+
+### 3.1 MongoDB - A Document Store Database
+
+<br/>
+
+### 3.2 Using Mongo Atlas Cloud Services
+
+<br/>
+
+### 3.3 Database Modeling with Mongoose
+
+<br/>
+
+### 3.4 Testing a Mongoose Model with Mocha
+
 
 
 ---
